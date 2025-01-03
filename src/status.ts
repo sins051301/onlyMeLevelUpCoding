@@ -203,6 +203,24 @@ function getWebviewContent() {
       <script>
         const vscode = acquireVsCodeApi();
         const levelContainer = document.getElementById('levelContainer');
+
+         const buttons = document.querySelectorAll('.button');
+          const statusView = document.getElementById('statusView');
+          const skillView = document.getElementById('skillView');
+
+          
+          buttons.forEach(button => {
+            button.addEventListener('click', () => {
+              const targetView = button.getAttribute('data-view');
+              if (targetView === 'status') {
+                statusView.classList.remove('hidden');
+                skillView.classList.add('hidden');
+              } else if (targetView === 'skill') {
+                skillView.classList.remove('hidden');
+                statusView.classList.add('hidden');
+              }
+            });
+          });
         
         window.addEventListener('message', (event) => {
           const message = event.data;
@@ -218,15 +236,13 @@ function getWebviewContent() {
           const expPercentage = (message.experience / message.experienceLimit) * 100;
           document.getElementById('exp-bar-fill').style.width = expPercentage + '%';
           document.getElementById('penalty-bar-fill').style.width = message.penalty + '%';
+
           const penaltyValue = message.penalty;
           const userNameElement = document.getElementById('userName');
           const redIntensity = Math.min(255, Math.max(0, Math.floor(penaltyValue * 2.55)));
-
-if (userNameElement) {
-  userNameElement.style.color = "rgb(" + redIntensity + ", " + redIntensity + ", " + redIntensity + ")";
-}
-
-
+          if (userNameElement) {
+           userNameElement.style.color = "rgb(" + redIntensity + ", " + redIntensity + ", " + redIntensity + ")";
+            }
         });
 
       </script>

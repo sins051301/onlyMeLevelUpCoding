@@ -1,13 +1,13 @@
 {
   "name": "onlymelevelupcoding",
+  "publisher": "sins051301",
   "displayName": "onlyMeLevelUpCoding",
   "description": "play with coding extension",
-  "publisher": "sins051301",
   "repository": {
     "type": "git",
     "url": "https://github.com/sins051301/onlyMeLevelUpCoding"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.96.0"
   },
