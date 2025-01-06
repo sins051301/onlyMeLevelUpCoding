@@ -1,6 +1,6 @@
 # OnlyMeLevelUpCoding
 
-![OnlyMeLevelUpCoding Banner](./assets/level-up.png)
+![Feature Image](./assets/level-up.png)
 
 **OnlyMeLevelUpCoding** is a fun leveling-up system designed for developers. By performing various actions and typing, you can gain experience points and level up, unlocking corresponding effects. This system provides extra enjoyment while coding and motivates developers to keep coding.
 
