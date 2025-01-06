@@ -1,5 +1,7 @@
 # OnlyMeLevelUpCoding
 
+![OnlyMeLevelUpCoding Banner](./assets/level-up.png)
+
 **OnlyMeLevelUpCoding** is a fun leveling-up system designed for developers. By performing various actions and typing, you can gain experience points and level up, unlocking corresponding effects. This system provides extra enjoyment while coding and motivates developers to keep coding.
 
 ## Key Features
@@ -26,6 +28,10 @@ If you don't code for a while, the system will send a warning message to encoura
 ### 5. Automatic Experience Synchronization
 Your experience points and level are continuously synchronized, allowing you to check your status at any time.  
 Experience points and level are updated automatically whenever an event occurs.
+
+### 6. Quick Access with F1
+You can quickly access the **OnlyMeLevelUpCoding** commands by pressing **F1** in VSCode.  
+Simply type **"OnlyMeLevelUpCoding"** in the command palette to view available options and features.
 
 ## Skill-Based Emoji Descriptions
 
@@ -64,6 +70,7 @@ The emojis shown when typing change as you level up. At each level, the followin
 - **File Operations**: You can gain experience points by performing various file operations, such as creating, opening, and deleting files.
 - **Debugging**: When you start debugging, additional experience points are awarded, and level-up effects are triggered.
 - **Typing**: During typing, effects matching your level will be displayed.
+- **Quick Commands**: Press **F1**, type **"OnlyMeLevelUpCoding"**, and select commands to explore features or view your progress.
 
 ## Developers and Contributions
 
